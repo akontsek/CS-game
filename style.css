@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #87CEEB; /* Light sky blue */
+}
+
+/* Styling for the game area and score */
+.gameArea {
+    position: relative;
+    width: 400px;
+    height: 600px;
+    background-color: #87CEEB;
+    overflow: hidden;
+    border: 2px solid #000;
+}
+
+.score {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #fff;
+    font-size: 20px;
+}
+
+/* Start screen styling */
+.startScreen {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    color: #000;
+    background-color: #fff;
+    padding: 10px 20px;
+    border: 2px solid #000;
+    cursor: pointer;
+    text-align: center;
+}
+
+/* Difficulty button styling */
+.difficulty {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.difficulty button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Cansat styling */
+.cansat {
+    position: absolute;
+    width: 50px;
+    height: 100px; /* Adjust height to fit both elements */
+    top: 0;
+    left: 175px;
+    text-align: center;
+}
+
+.umbrella {
+    font-size: 40px;
+    line-height: 1;
+}
+
+.can {
+    font-size: 40px;
+    line-height: 1;
+    margin-top: -10px; /* Adjust margin for a snug fit */
+}
+
+/* Obstacle styling */
+.obstacle {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    font-size: 40px;
+    text-align: center;
+    line-height: 50px;
+}
+
+/* Mock icons */
+.cloud::before { content: "☁️"; }
+.bird::before { content: "🐦"; }
+.ufo::before { content: "👽"; }
